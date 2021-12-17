@@ -75,36 +75,43 @@ img {
 
 /* Esercizio mediaquery */
 
-@media (max-width: 419px){
+@media screen and (max-width:419px){
 
-  body{
-    margin: 0;
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
   }
 
   .row{
-    width: 100vw;
-    min-width: 419px;
-    margin: 0;
-    padding: 10px;
+      width: 100%;
+      margin: 0;
+      padding-top: 20px;
   }
 
+  #lezioni .row > .right, #lezioni .row > .left{
+      width: 100%;
+      float: none;
+      padding: 15px 0px;
+  }
+
+   
   #lezioni .row, #why  .row{
     background-color: #F2F2CD;
   }
 
-  #lezioni .row > .left, #lezioni .row > .right {
-    float: none;
-    width: 100%;
-  }
-
-  #steps .row > .left, #steps .row > .central, #steps .row > .right {
-    float: none;
-    width: 100%;
+  #steps .row > .left, #steps .row > .central, #steps .row > .right{
+      width: 100%;
+      float: none;
+      padding: 15px 0px;
   }
 
   #why .row > .first, #why .row > .second, #why .row > .third{
-    float: none;
-    width: 100%;
+      margin-top: 30px;
+  }
+
+  #why .row > .third{
+      padding-bottom: 15px;
   }
 
 
@@ -118,11 +125,6 @@ img {
     margin: 0;
     padding: 5px;
 }
-
-  .container {
-    width:809px;
-    min-width:809px;
-  }
 
   .container.grey{
     background-color: #fff;
@@ -158,4 +160,5 @@ img {
 
 
 }
+
 
